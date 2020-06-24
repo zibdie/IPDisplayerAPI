@@ -2,9 +2,9 @@
 
 ## Backstory
 
-This project came into fruition when one of the services I use to check IP addresses went bad due to an expired SSL certificate. Instead of waiting for the service provider to redeploy a valid certificate, I decided it would be a good time to write my own.
+This project came into fruition when one of the services I use to check IP addresses went bad due to an expired SSL certificate. Instead of waiting for the service provider to redeploy a valid certificate, I decided it would be a good time to write my own service that can do the same.
 
-The purpose of this API is to simply see the IP address of the incoming user. While this alone is not special, the benefit of this API was that CORS was enabled. Since the script allows cross-origin requests, it allowed me to deploy JavaScript scripts that can fetch a users IP address and do whatever they want. This is very useful when your current hosting provider (like Netlify) either does not allow this or makes it difficult to easily.
+The purpose of this API is to simply see the IP address of the incoming user. While this alone is not special, the benefit of this API is that CORS is enabled. CORS rules tell the browser how a script on one website can (or even if) interact with another website. These rules are put in place so malicious scripts on a dodgy website cannot interact with other websites such as your social media profiles or banking accounts. However, this means a website must explicitly state how it can be interacted with outside its domain. Since the script allows cross-origin requests, it allows me to deploy JavaScript scripts that can fetch a users IP address if one of my websites is hosted on a server that does not allow you to modify the backend (for example, on static hosting pages like Netlify or Github Pages)
 
 ## Deployment
 
@@ -35,6 +35,8 @@ Then, after its built, run
 docker container run ipdisplayer
 ```
 
+All necessary packages will be installed and the server will run.
+
 ### Heroku & GitHub Actions
 
 You can deploy a copy of this to Heroku using GitHub Actions. You will need: 
@@ -56,7 +58,7 @@ Assuming your APP_NAME and API_KEYs are correct, GitHub will deploy your contain
 
 ## Live Demo
 
-If you cannot deploy your own, there is a live demo but keep in mind that uptime is not garunteed and this may go down at any time.
+If you cannot deploy your own, there is a live demo but keep in mind that uptime and availability is not guaranteed and this service may go down at any time. Click on the image below:
 
 [![Live Demo](https://i.imgur.com/iK8j7Z6.png)](https://redirct.page.link/IPDisplayerLiveDemo)
 
