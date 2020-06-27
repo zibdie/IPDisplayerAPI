@@ -1,4 +1,4 @@
-# IP Displayer API
+# IP Address Displayer & API
 
 ## Backstory
 
