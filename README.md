@@ -1,3 +1,5 @@
+![IP Displayer Logo](./static/logo-inv.png)
+
 # IP Address Displayer & API
 
 ## Backstory
