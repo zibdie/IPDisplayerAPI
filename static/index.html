@@ -33,12 +33,18 @@
                 <strong>Formats Allowed: </strong>
                 <br>
                 <ul>
-                    <li> <span class="iconify" data-icon="logos:json" data-inline="false"></span> JSON - "/api?format=json"</li>
-                    <li> <span class="iconify" data-icon="mdi:xml" data-inline="false"></span> XML - "/api?format=lxml"</li>
-                    <li> <span class="iconify" data-icon="bx:bxs-file-html" data-inline="false"></span> HTML/Plain Text - "/api?format=html"</li>
+                    <li> <span class="iconify" data-icon="logos:json" data-inline="false"></span> JSON - "<div class='page-url' style="margin: 0; padding: 0; display: inline;"></div>/api?format=json"</li>
+                    <li> <span class="iconify" data-icon="mdi:xml" data-inline="false"></span> XML - "<div class='page-url' style="margin: 0; padding: 0; display: inline;"></div>/api?format=lxml"</li>
+                    <li> <span class="iconify" data-icon="bx:bxs-file-html" data-inline="false"></span> HTML/Plain Text - "<div class='page-url' style="margin: 0; padding: 0; display: inline;"></div>/api?format=html"</li>
                 </ul>
                 <br>
         </div>
     </div>
+    <script>
+        let pageURLArray = Array.from(document.getElementsByClassName("page-url"));
+        pageURLArray.forEach(element => {
+            element.textContent = window.location.origin;
+        })
+    </script>
 </body>
 </html> 
