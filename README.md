@@ -58,13 +58,3 @@ You can deploy a copy of this to Heroku using GitHub Actions. You will need:
 
 Assuming your APP_NAME and API_KEYs are correct, GitHub will deploy your container to Heroku every time you make a push & pull request.
 
-## Live Demo
-
-If you cannot deploy your own, there is a live demo but keep in mind that uptime and availability is not guaranteed and this service may go down at any time. Click on the image below:
-
-[![Live Demo](https://i.imgur.com/iK8j7Z6.png)](https://redirct.page.link/IPDisplayerLiveDemo)
-
-Or by typing/copying and pasting:
-```
-https://redirct.page.link/IPDisplayerLiveDemo
-```
